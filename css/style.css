@@ -2,4 +2,47 @@ header {
     background-image: url("../img/header-background.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.content-wrapper {
+    margin: 20px auto 0 auto !important;
+    width: 80%;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none !important;
+}
+.navbar-default {
+    padding-top: 8px;
+    background-color: transparent !important;
+    border: none !important;
+}
+.nav li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #262626 !important;
+    font-size: 18px;
+}
+.nav li a:hover {
+    color: #ff6033 !important;
+}
+.active::before {
+    content: '';
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ff6033;
+    top: 0;
+    left: 15px;
+}
+.navbar-header {
+    margin-top: -50px;
+}
+.icon-bar {
+    background-color: #fff !important;
+}
+.navbar-toggle {
+    background-color: #ff6033 !important;
+    border: none !important;
 }
